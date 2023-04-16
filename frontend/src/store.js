@@ -12,8 +12,12 @@ import {
   userRegisterReducer,
   userUpdateReducer,
 } from "./reducers/userReducers";
+import {
+  countryListReducer
+} from "./reducers/countryReducers";
 
 const reducer = combineReducers({
+  countryList: countryListReducer,
   noteList: noteListReducer,
   userLogin: userLoginReducer,
   userRegister: userRegisterReducer,

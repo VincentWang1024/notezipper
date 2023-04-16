@@ -20,8 +20,8 @@ function LandingPage({ history }) {
         <Row>
           <div className="intro-text">
             <div>
-              <h1 className="title">Welcome to Note Zipper</h1>
-              <p className="subtitle">One Safe place for all your notes.</p>
+              {/* <h1 className="title">Welcome!</h1> */}
+              {/* <p className="subtitle">New feature relaesed!</p> */}
             </div>
             <div className="buttonContainer">
               <Link to="/login">
@@ -31,7 +31,7 @@ function LandingPage({ history }) {
               </Link>
               <Link to="/register">
                 <Button
-                  variant="outline-primary"
+                  // variant="outline-primary"
                   size="lg"
                   className="landingbutton"
                 >
