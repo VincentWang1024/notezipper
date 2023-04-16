@@ -7,16 +7,12 @@ import path from "path";
 import noteRoutes from "./routes/noteRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
-import morgan from 'morgan';
 
 dotenv.config();
 
 connectDB();
 
 const app = express(); // main thing
-// const morgan = require('morgan');
-// Use Morgan middleware to log HTTP requests
-app.use(morgan('combined'));
 
 app.use(express.json()); // to accept json data
 
@@ -43,7 +39,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(notFound);
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(
   PORT,
