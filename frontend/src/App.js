@@ -13,7 +13,10 @@ import ProfileScreen from "./screens/ProfileScreen/ProfileScreen";
 
 function App() {
   const [search, setSearch] = useState("");
-
+  useEffect(() => {
+    document.title = "MERN App";
+  }, []);
+  
   return (
     <Router>
       <Header setSearch={(s) => setSearch(s)} />
